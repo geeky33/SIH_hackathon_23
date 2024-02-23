@@ -1,0 +1,373 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('back_img.jpg');
+}
+
+.logo img {
+  width: 40%;
+  margin-left: 25%;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar {
+  background-color: #002203;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid olive;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  color: #002203;
+  background-color: #15b946;
+  border-right: 2px solid green;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before {
+  display: block;
+}
+
+.wrapper .section {
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+  background-color: #002203;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .icon i {
+  color: white;
+  font-size: larger;
+}
+
+.wrapper .section .top_navbar .icon i:hover {
+  color: #15b946;
+}
+
+body.active .wrapper .sidebar {
+  left: -200px;
+}
+
+body.active .wrapper .section {
+  margin-left: 0;
+  width: 100%;
+}
+
+body.active .wrapper .content {
+  margin-left: 5%;
+}
+
+body.active .wrapper .stats .head-stat,
+body.active .wrapper .stats .india,
+body.active .wrapper .stats .primary,
+body.active .wrapper .stats .uprimary,
+body.active .wrapper .stats .secondary,
+body.active .wrapper .stats .table-head {
+  margin-left: 5%;
+}
+
+body.active .wrapper .stats .uprimary img,
+body.active .wrapper .stats .secondary img,
+body.active .wrapper .stats .district-table {
+  margin-left: 20%;
+}
+
+body.active .wrapper .research {
+  margin-left: 5%;
+}
+
+body.active .wrapper .solutions {
+  margin-left: 5%;
+}
+
+body.active .wrapper .reasons {
+  margin-left: 5%;
+}
+
+body.active .wrapper .contact .contact-content {
+  margin-left: 5%;
+}
+
+body.active .wrapper .contact .contact-content .number {
+  margin-top: -6%;
+}
+
+body.active .wrapper .contact .contact-content .by {
+  margin-top: -7%;
+}
+
+.wrapper .section .top_navbar .login-register{
+  margin-left: 32%;
+  color: white;
+  font-size: 15;
+  font-family: 'Dosis', sans-serif;
+}
+
+body.active .wrapper .section .top_navbar .login-register {
+  margin-left: 30%;
+}
+
+.wrapper .section .top_navbar .login-register a{
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+}
+
+.wrapper .section .top_navbar .login-register a:hover {
+  background-color: #15b946;
+  color: #002203;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.top_logo {
+  color: #15b946;
+  margin-left: 35%;
+  font-size: 30px;
+  text-align: center;
+}
+
+body.active .top_logo {
+  margin-left: 40%;
+}
+
+.welcome_img {
+  margin-top: 60px;
+  color: white;
+  text-shadow: 0 0 5px black;
+  width: 90%;
+  height: 700%;
+}
+
+.welcome_img h1 {
+  padding-top: 7%;
+  font-size: 100px;
+  text-align: center;
+}
+
+.content .what {
+  border: 1px black;
+  position: absolute;
+  margin-top: 10px;
+  text-decoration: double;
+  font-size: 15px;
+  width: 25%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.content .how {
+  border: 1px black;
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 27%;
+  text-decoration: double;
+  font-size: 15px;
+  width: 25%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.content .who {
+  border: 1px black;
+  position: absolute;
+  margin-top: 4%;
+  margin-left: 55%;
+  text-decoration: double;
+  font-size: 15px;
+  width: 25%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.content p {
+  text-align: center;
+  margin-top: 40%;
+  text-decoration: double;
+  font-size: 20px;
+  width: 90%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.head-stat {
+  color: white;
+  margin-left: 20%;
+  margin-top: 20%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.stats .india {
+  margin-left: 20%;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+.stats .india img {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.stats .primary {
+  margin-left: 20%;
+  margin-top: 20%;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+.stats .primary img {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.stats .uprimary {
+  margin-left: 20%;
+  margin-top: 20%;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+.stats .uprimary img {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.stats .secondary {
+  margin-left: 20%;
+  margin-top: 20%;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+
+.stats .secondary img {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.table-head {
+  color: white;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-family: 'Dosis', sans-serif;
+}
+
+table {
+  margin-top: 5%;
+  margin-left: 20%;
+  width: 50%;
+  border-collapse: collapse;
+  border: 1px solid white;
+}
+
+th,
+td {
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+td,
+th {
+  padding: 6px 4px;
+}
+
+.research {
+  color: white;
+  margin-left: 20%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.reasons {
+  color: white;
+  width: 75%;
+  margin-left: 20%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact {
+  color: white;
+  margin-left: 0;
+  width: 100%;
+  font-family: 'Dosis', sans-serif;
+  background: #002203;
+}
+
+.contact .contact-content {
+  background-color: #002203;
+  margin-left: 20%;
+}
+
+.table-reasons {
+  color: white;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact-content .address {
+  background-color: #002203;
+  width: 30%;
+  margin-top: 0%;
+}
+
+.contact-content .number {
+  background-color: #002203;
+  width: 30%;
+  margin-top: -7%;
+  margin-left: 35%;
+}
+
+.contact-content .by {
+  background-color: #002203;
+  width: 30%;
+  margin-top: -8%;
+  margin-left: 70%;
+}
+
+.solutions {
+  color: white;
+  width: 75%;
+  margin-left: 20%;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact img {
+  width: 10%;
+  
+}

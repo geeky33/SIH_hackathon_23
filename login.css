@@ -1,0 +1,70 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url('back_img.jpg');
+  }
+
+  .wrapper .section {
+    width: 100%;
+    margin-left: 0;
+  }
+  .wrapper .section .top_navbar {
+    background-color: #002203;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .wrapper .section .top_navbar .login-register{
+    margin-left: 0;
+    color: white;
+    font-size: 15;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .wrapper .section .top_navbar .login-register a{
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .wrapper .section .top_navbar .login-register a:hover {
+    background-color: #15b946;
+    color: #002203;
+  }
+
+  .top_logo {
+    color: #15b946;
+    margin-left: 35%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 15%;
+    margin-left: 30%;
+    padding: 20px;
+    color: white;
+    font-family: 'Dosis', sans-serifs;
+    font-size: 30px;
+  }
+
+  .name, .password, .email{
+    width: 150px;
+    margin: 5px;
+  }
+  .submit{
+    margin-left: 10%;
+    padding: 2px;
+    width: 100px;
+    height: 30px;
+    background-color: #15b946;
+    color: #002203;
+  }
